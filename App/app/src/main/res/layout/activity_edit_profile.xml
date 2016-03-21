@@ -9,4 +9,62 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jennifer.floatapp.EditProfile">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstNameText"
+        android:layout_alignParentTop="true"
+        android:hint="First Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastNameText"
+        android:layout_below="@+id/firstNameText"
+        android:layout_alignParentStart="true"
+        android:hint="Last Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/lastNameText"
+        android:layout_alignParentStart="true"
+        android:hint="Email Address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addressText"
+        android:layout_below="@+id/emailText"
+        android:layout_alignParentStart="true"
+        android:hint="Mailing Address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/zipcodeText"
+        android:layout_below="@+id/addressText"
+        android:layout_alignParentStart="true"
+        android:hint="Zipcode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:onClick="submit_pressed"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/zipcodeText"
+        android:layout_alignEnd="@+id/zipcodeText" />
 </RelativeLayout>
